@@ -7,19 +7,26 @@
   <meta name="author" content="Douglas Casetta ferreira">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+  
+  <!-- Link para a Folha de Estilo da Página - CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
   <title> Meu Perfil </title>
+
 </head>
 <body>
   <!-- Cabeçalho da Página (header) -->
   <header>
 
     <!-- Div Conteudo do Cabeçalho -->
-    <div id="header-content">
+    <div id="header-content" class="flex">
 
       <!-- Titulo do Cabeçalho -->
       <div id="titulo">
+
         <!--Seu Nome-->
         <h1>Douglas Casetta ferreira</h1>
+      
       </div>
 
       <!-- Conteudo do Menu da Página (header) -->
@@ -50,10 +57,9 @@
   <!-- Seção Principal da Página (main) -->
   <main>
 
-      <!-- Seção Formulário de Contato e Redes Sociais -->
-      <section id="contact">
+      <div id="contact" class="flex">
 
-        <!-- Seção do Formulário -->
+        <!-- Seção do Formulário de Contato -->
         <form action="#" method="submit" id="formulario">
 
           <label for="name">Nome: </label>
@@ -75,7 +81,7 @@
         </form>
         
         <!-- Seção do Google Maps -->
-        <article id="mapa">
+        <article id="mapa" class="flex_start">
 
           <p>Av. Francisco Glycério 637</p>
           <p>Santos - SP</p>
@@ -86,12 +92,12 @@
 
         </article>
 
-      </section>
+      </div>
 
         <main>
 
           <!-- Rodapé da Página (footer)-->
-          <footer>
+          <footer class="flex">
 
             <!--Seção de Contatos - Redes Sociais -->
             <section id="redes_sociais">

@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --purple-200: #9a7bd1;
+  --purple-500: #6b36c8;
+  --purple-800: #441f88;
+
+  --black-800: #171717;
+
+  --gray-200: #cccccc;
+  --gray-400: #505861;
+
+  --white: #f1f5f9;
+
+  --red: #ef4444;
+
+  --blue: #0F172A;
+  --blue-vívido: #3b82f6;
+
+  --yellow: #f59e0b;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background: var(--blue);
+  color: var(--blue-vívido);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Definindo as configurações de títulos e paragrafo */
+h1 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  padding: 1rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+h3 {
+  padding: 1rem;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+
+/* Definindo as configurações do Flexbox */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header_content {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+}
+
+#menu li {
+  display: inline;
+  padding: 1rem;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: var(--red);
+  font-size: 20px;
+}
+
+#menu li a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+#conteudo {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.img_profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+  border: 2px solid var(--red); /* Opcional: adiciona uma borda vermelha */
+}
+
+
+#video iframe {
+  margin: 2rem auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 3px solid var(--red);
+  border-radius: 2rem;
+  padding: 8px;
+  box-shadow: 0 4px 12px var(--yellow);   
+}
+
+
+footer {
+  flex-direction: column;
+  margin: 0;
+  padding: 2rem;
+  color: var(--yellow);
+  background-color: var(--red);
+  font-weight: bold;
+  text-align: center;
+}
+
+#redes_sociais {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+  width: 320px;
+}
+
+.social_icon {
+  width: 4rem;
+  height: 4rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%)
+    hue-rotate(23deg) brightness(95%) contrast(87%);
+}
+
+.social_icon:hover {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%)
+    hue-rotate(213deg) brightness(86%) contrast(88%);
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: none;
+}
+
+form label {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+form input,
+textarea {
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 5rem;
+}
+
+form span {
+  margin: 0 0 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: yellow;
+}
+
+form button {
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--blue-vívido);
+  border: 1px solid var(--red);
+  color: var(--white);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: var(--red);
+}
+
+#mapa {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#endereco > p {
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 600;
+}
+
+/* Resposividade */
+@media (max-width: 1000px) {
+  #conteudo {
+    flex-direction: column;
+  }
+
+  #conteudo img {
+    border-radius: 32px;
+    border: 2px solid;
+    width: 75vw;
+  }
+}
