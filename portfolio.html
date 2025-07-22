@@ -4,53 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Douglas Ferreira</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #121826;
-        color: #fff;
-        margin: 0;
-        padding: 2rem;
-      }
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-      h1 {
-        text-align: center;
-        color: #ffc107;
-      }
-
-      .projeto {
-        background-color: #1f2937;
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-      }
-
-      .projeto img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 8px;
-        margin-top: 1rem;
-      }
-
-      .projeto h2 {
-        color: #61dafb;
-      }
-
-      .projeto a {
-        color: #ffcc00;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .colaboradores {
-        font-size: 0.9rem;
-        color: #ccc;
-        margin-top: 0.5rem;
-      }
-    </style>
   </head>
   <body>
+    <!-- Cabeçalho da Página (header) -->
+    <header>
+      <!-- Div Conteudo do Cabeçalho -->
+      <div id="header-content" class="flex">
+        <!-- Titulo do Cabeçalho -->
+        <div id="titulo">
+          <!--Seu Nome-->
+          <h1>Douglas Casetta ferreira</h1>
+        </div>
+
+        <!-- Conteudo do Menu da Página (header) -->
+        <div id="menu">
+          <nav>
+            <ul class="menu-list">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="contato.html"> Contato </a></li>
+              <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <h1>Portfólio de Projetos</h1>
 
     <section class="projeto">
@@ -64,8 +44,9 @@
         <a
           href="https://github.com/dgsferreira/projetoBlogPessoal"
           target="_blank"
-          >Ver projeto no GitHub</a
         >
+          Ver projeto no GitHub
+        </a>
       </p>
       <p class="colaboradores">Colaboradores: Projeto individual</p>
     </section>
@@ -81,8 +62,9 @@
         <a
           href="https://github.com/dgsferreira/projeto-loja-games"
           target="_blank"
-          >Ver projeto no GitHub</a
         >
+          Ver projeto no GitHub
+        </a>
       </p>
       <p class="colaboradores">Colaboradores: Projeto individual</p>
     </section>
@@ -98,8 +80,9 @@
         <a
           href="https://github.com/Grupo-5-Generation/delivery-backend"
           target="_blank"
-          >Ver projeto no GitHub</a
         >
+          Ver projeto no GitHub
+        </a>
       </p>
       <p class="colaboradores">Colaboradores: Grupo 5 - Generation</p>
     </section>
@@ -115,10 +98,83 @@
         <a
           href="https://github.com/Grupo-5-Generation/fitness-backend"
           target="_blank"
-          >Ver projeto no GitHub</a
         >
+          Ver projeto no GitHub
+        </a>
       </p>
       <p class="colaboradores">Colaboradores: Grupo 5 - Generation</p>
     </section>
+
+    <section class="projeto">
+      <h2>Conta Bancária</h2>
+      <img src="imagens/conta-bancaria.png" alt="Projeto Conta Bancária" />
+      <p>
+        Simulação de uma conta bancária com operações básicas como depósito,
+        saque e extrato.
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/dgsferreira/conta_bancaria" target="_blank"
+          >Ver Projeto</a
+        >
+      </p>
+      <p><strong>Colaboradores:</strong> Projeto individual</p>
+    </section>
+
+    <section class="projeto">
+      <h2>Destino Geek (E-commerce)</h2>
+      <img src="imagens/destino-geek.png" alt="Projeto Destino Geek" />
+      <p>
+        Loja virtual focada em produtos geek. Funcionalidades de cadastro, busca
+        e compra de produtos.
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/dgsferreira/projeto-ecommerce--destino-geek"
+          target="_blank"
+          >Ver Projeto</a
+        >
+      </p>
+      <p><strong>Colaboradores:</strong> Projeto individual</p>
+    </section>
+
+    <section class="projeto">
+      <h2>CRUD Farmácia</h2>
+      <img src="imagens/crud-farmacia.png" alt="Projeto CRUD Farmácia" />
+      <p>
+        Aplicação backend para cadastro e gerenciamento de produtos de farmácia
+        utilizando Spring Boot.
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/dgsferreira/CRUD-Farmacia" target="_blank"
+          >Ver Projeto</a
+        >
+      </p>
+      <p><strong>Colaboradores:</strong> Projeto individual</p>
+    </section>
+
+    <section class="projeto">
+      <h2>RH Backend</h2>
+      <img src="imagens/rh-backend.png" alt="Projeto RH Backend" />
+      <p>
+        Projeto em grupo para controle de funcionários, departamentos e cargos
+        de uma empresa.
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/Grupo-5-Generation/rh-backend"
+          target="_blank"
+          >Ver Projeto</a
+        >
+      </p>
+      <p><strong>Colaboradores:</strong> Grupo 5 - Generation Brasil</p>
+    </section>
+
+    <footer id="contato">
+      <p>Feito por Douglas Ferreira © 2025</p>
+    </footer>
   </body>
 </html>
