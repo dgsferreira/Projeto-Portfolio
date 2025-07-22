@@ -144,7 +144,7 @@ table {
 
   --red: #ef4444;
 
-  --blue: #0F172A;
+  --blue: #0f172a;
   --blue-vívido: #3b82f6;
 
   --yellow: #f59e0b;
@@ -157,7 +157,7 @@ html {
 
 body {
   background: var(--blue);
-  color: var(--blue-vívido);
+  color: var(--white);
   font-family: "Roboto", sans-serif;
 }
 
@@ -204,29 +204,29 @@ p {
   justify-content: flex-start;
 }
 
-#header_content {
+#header-content {
   height: 80px;
   position: sticky;
   top: 0;
   width: 100%;
   justify-content: space-between;
   padding: 24px;
-  background-color: var(--yellow);
-  border-bottom: 1px solid var(--yellow);
+  background-color: var(--blue);
+  border-bottom: 1px solid var(--blue-vívido);
 }
 
-#menu li {
+.menu-list li {
   display: inline;
   padding: 1rem;
 }
 
-#menu li a {
+.menu-list li a {
   text-decoration: none;
-  color: var(--red);
+  color: var(--white);
   font-size: 20px;
 }
 
-#menu li a:hover {
+.menu-list li a:hover {
   color: var(--red);
   text-decoration: underline;
 }
@@ -251,7 +251,6 @@ p {
   border: 2px solid var(--red); /* Opcional: adiciona uma borda vermelha */
 }
 
-
 #video iframe {
   margin: 2rem auto;
   width: 100%;
@@ -259,15 +258,14 @@ p {
   border: 3px solid var(--red);
   border-radius: 2rem;
   padding: 8px;
-  box-shadow: 0 4px 12px var(--yellow);   
+  box-shadow: 0 4px 12px var(--yellow);
 }
-
 
 footer {
   flex-direction: column;
   margin: 0;
-  padding: 2rem;
-  color: var(--yellow);
+  padding: 2rem 0;
+  color: var(--blue-vívido);
   background-color: var(--red);
   font-weight: bold;
   text-align: center;
@@ -351,13 +349,16 @@ form button:hover {
   background: var(--red);
 }
 
-#mapa {
-  display: flex;
-  width: 480px;
-  flex-direction: column;
-  gap: 3rem;
+#mapa iframe {
+  border: 3px solid var(--red);
+  border-radius: 2rem;
+  padding: 8px;
+  box-shadow: 0 4px 12px var(--yellow);
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin: 2rem auto;
+  display: block;
 }
-
 #endereco > p {
   font-size: 1rem;
   text-align: justify;
